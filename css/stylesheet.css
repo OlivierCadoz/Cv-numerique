@@ -1,0 +1,314 @@
+/*---------- ----------*\
+        Font-face
+\*---------- ----------*/
+@font-face {
+  font-family: 'Sanseriffic';
+  src: url('font/Sanseriffic.otf');
+}
+
+
+
+
+
+/*---------- ----------*\
+         General
+\*---------- ----------*/
+body {
+  background-image: url(../images/multicolor.jpg);
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+  height: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sanseriffic', sans-serif;
+}
+
+.container {
+  background-color: rgb(240, 240, 240);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  padding-bottom: 0;
+  border: none;
+  border-radius: 1px;
+}
+
+div {
+  margin: 10px 0;
+}
+
+p, h5 {
+  margin: 5px;
+  color: #262626;
+  font-size: 20px;
+}
+
+h4 {
+  margin: 5px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+
+
+
+
+/*---------- ----------*\
+          Name
+\*---------- ----------*/
+.name {
+  border: 3px solid black;
+  border-radius: 1px;
+  font-size: 20px;
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+.name h1 {
+  margin: 10px 0;
+}
+
+
+
+
+
+/*---------- ----------*\
+           Job
+\*---------- ----------*/
+.job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  color: #4d4d4d;
+  margin-top: 5px;
+}
+
+.job h2 {
+  margin: 5px;
+}
+
+
+
+
+
+/*---------- ----------*\
+          Image
+\*---------- ----------*/
+img {
+  width: 150px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px;
+}
+
+
+
+
+
+/*---------- ----------*\
+      Content part
+\*---------- ----------*/
+.content{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+
+.experience, .education {
+  width: 50%;
+  padding: 0 10px;
+}
+
+
+
+
+
+/*---------- ----------*\
+        Experience
+\*---------- ----------*/
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-right: 1px solid #4d4d4d;
+}
+
+
+
+
+
+/*---------- ----------*\
+        About me
+\*---------- ----------*/
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.description {
+  margin: 30px 0;
+}
+
+
+
+
+
+/*---------- ----------*\
+        Education
+\*---------- ----------*/
+.education {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #4d4d4d;
+}
+
+
+
+
+
+/*---------- ----------*\
+          Skills
+\*---------- ----------*/
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+.skillsName{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skillScale{
+  display: flex;
+  flex-direction: row;
+}
+
+.scaleFull{
+  background-color: black;
+  height:10px;
+  width: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.scaleEmpty{
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+
+
+
+
+/*---------- ----------*\
+         Contact
+\*---------- ----------*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactMarge {
+  margin: 30px 0;
+}
+
+.contactMarge a:hover{
+  color: #808080;
+}
+
+
+
+
+
+/*---------- ----------*\
+         element
+\*---------- ----------*/
+.elementExp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.elementEduc{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+
+
+/*---------- ----------*\
+      media-queries
+\*---------- ----------*/
+@media screen and (max-width: 767px) {
+  .container {
+    width: 66%;
+  }
+
+  .name {
+    margin-top: 165px;
+    text-align: center;
+  }
+
+  .job {
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience, .education{
+    border: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .elementExp, .elementEduc, .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutMe {
+    display: none;
+  }
+
+  .skillsName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contactMarge {
+    margin-bottom: 0;
+  }
+}
